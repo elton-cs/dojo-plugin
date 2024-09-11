@@ -7,8 +7,12 @@ edition = "2021"
 bevy = "0.14.2"
 starknet-crypto = "0.7.0"
 tokio = { version = "1.40.0", features = ["rt-multi-thread", "sync"] }
-torii-client = { git = "https://github.com/dojoengine/dojo.git", tag = "v1.0.0-alpha.11" }
-torii-grpc = { git = "https://github.com/dojoengine/dojo.git", tag = "v1.0.0-alpha.11" }
+torii-client = { git = "https://github.com/elton-cs/dojo.git", rev = "401dacfbc753fee14d9dda9b45724c4dafa1b543" }
+torii-grpc = { git = "https://github.com/elton-cs/dojo.git", rev = "401dacfbc753fee14d9dda9b45724c4dafa1b543" }
+
+# torii-client = { git = "https://github.com/dojoengine/dojo.git", tag = "v1.0.0-alpha.11" }
+# # torii-grpc = { git = "https://github.com/dojoengine/dojo.git", tag = "v1.0.0-alpha.11" }
+
 
 [patch.crates-io]
 starknet-core = { git = "https://github.com/kariy/starknet-rs", branch = "dojo-patch" }
